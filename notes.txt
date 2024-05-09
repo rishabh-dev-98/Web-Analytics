@@ -1,0 +1,26 @@
+if (digitalData.data.clickName == "Close") {
+  console.log(document.getElementById("close button").innerText, "button rule fired...");
+}
+else if (digitalData.data.clickName == "X") {
+  console.log(document.getElementById("close icon").innerText, "icon rule fired...");
+}
+
+// rishabh DEV web property script
+<script src="https://assets.adobedtm.com/512027f42d3c/6d883a5445c0/launch-ce4526aa3009-development.min.js" async></script>
+
+// web extensions | rishabh web property script
+<script src="https://assets.adobedtm.com/512027f42d3c/284d25a1cf4a/launch-2c7cf5d4dbcc-development.min.js" async></script>
+
+<div class="container">
+
+      <ul class="list-group" id="myList">
+        <input type="text">
+      </ul>
+
+      <p>Click "Append" to append an item to the end of the list:</p>
+
+      <button onclick="myFunction()">Append</button>
+
+      <p>Click "Remove" to remove the first item from the list:</p>
+      <button onclick="myFunction2()">Remove</button>
+    </div>

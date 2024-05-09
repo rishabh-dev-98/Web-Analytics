@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://assets.adobedtm.com/512027f42d3c/6d883a5445c0/launch-ce4526aa3009-development.min.js" async></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adobe Learnings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="my-3 text-center pageTitle">Welcome to the Sign in Page...</h3>
+      <form class="my-4">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control user-email" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="choiceSelection()">
+          <label class="form-check-label" for="exampleCheck1" id="form check label">Check me out</label>
+        </div>
+        <div class="mb-3">
+          <select class="form-select" id="dropdown" aria-label="Default select example" onclick="dropDown()">
+            <option selected>Select your Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="submitButton(); modalPageLoad()" id="submit button">
+          Submit
+        </button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Successfull Submission.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close icon" onclick="closeIcon()"></button>
+              </div>
+              <div class="modal-body">
+                Thank you for submitting the form.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick="closeButton()" id="close button">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveChangesButton()" id="save changes button">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <iframe src="./home.html" height="100" width="100" style="border:2px solid red;" title="Iframe Example"></iframe>
+    </div>
+
+    <div class="container">
+      <nav class="navbar" style="background-color: #e3f2fd;">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://www.google.com/" target="_blank" onclick="exitLink1()" id="exitLink1">Google</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://experience.adobe.com/#/@unitedhealthgroup/data-collection/tags/companies/CO0e5aa76ca890437e8f307549c16cd3bb/properties" target="_blank" onclick="exitLink2()" id="exitLink2">Launch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank" onclick="exitLink3()" id="exitLink3">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index2.html" onclick="exitLink3()" id="exitLink3">New Page</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index3.html" onclick="viewProduct()" id="viewproduct">View Product</a>
+          </li>
+        </ul>
+      </nav>
+    </div>  
+    
+    <div class="container my-5">
+      <video class='video-tracking' width="500px" height="500px" controls="controls" />
+         
+        <source src="video.mp4" type="video/mp4">
+    </video>
+      
+      <div id='here'></div>
+      <button onclick="addHtml()">pushMe</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
